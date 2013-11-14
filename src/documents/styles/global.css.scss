@@ -1,0 +1,77 @@
+/************************
+*************************
+
+meltmedia.com 2013
+
+*************************
+************************/
+
+/*-- scss imports --*/
+
+@import "reset";
+@import "mixins";
+@import "colors";
+
+/*------------------------
+Global styles
+------------------------*/
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: none; }
+
+html, body { height: 100%; }
+
+body {
+  font-size: 16px;
+}
+
+a { text-decoration: none; }
+
+.siteNav {
+  background: $grey;
+  float: left;
+  height: 100%;
+  padding: 15px;
+  width: 15%;
+}
+
+.siteNav-item {
+  background: $navy;
+  color: $white;
+  display: block;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.siteNav-logo {
+  margin-bottom: 60px;
+  padding: 60px 20px;
+}
+
+.siteGrid {
+  background: $navy;
+  float: left;
+  height: 100%;
+  padding: 20px;
+  width: 85%;
+}
+
+.siteGrid-item {
+  background: $white;
+  border: 8px solid $navy;
+  float: left;
+  height: 200px;
+  padding: 10px;
+  width: 25%;
+}
+
+/*------------------------
+Clearfix
+------------------------*/
+
+.clearfix:after,
+body:after, {
+  @include clearfix;
+}

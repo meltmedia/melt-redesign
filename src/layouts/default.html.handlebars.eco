@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>     <html class="no-js lte-ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- Site Properities -->
+  <title>meltmedia - {{document.title}}</title>
+  <meta name="description" content="{{document.description}}" />
+
+  <%- @getBlock('styles').add(['/styles/global.css']).toHTML() %>
+
+  <!--[if lte IE 8]>
+    <script src="/scripts/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+
+<body class="{{document.bodyClass}}">
+
+  <nav class="siteNav">
+    <a href="#" class="siteNav-item siteNav-logo">meltmedia</a>
+    <a href="#" class="siteNav-item">Work</a>
+    <a href="#" class="siteNav-item">Team</a>
+    <a href="#" class="siteNav-item">Labs</a>
+    <a href="#" class="siteNav-item">Blog</a>
+    <a href="#" class="siteNav-item">Contact</a>
+  </nav>
+
+  <section class="siteGrid">
+    <div class="siteGrid-item">Tweet</div>
+    <div class="siteGrid-item">Instagram</div>
+    <div class="siteGrid-item">Photo</div>
+    <div class="siteGrid-item">meltmedian</div>
+    <div class="siteGrid-item">Case Study</div>
+    <div class="siteGrid-item">Blog Entry</div>
+    <div class="siteGrid-item">Lab Entry</div>
+    <div class="siteGrid-item">Tweet</div>
+    <div class="siteGrid-item">Instagram</div>
+    <div class="siteGrid-item">Photo</div>
+    <div class="siteGrid-item">meltmedian</div>
+    <div class="siteGrid-item">Case Study</div>
+    <div class="siteGrid-item">Blog Entry</div>
+    <div class="siteGrid-item">meltmedian</div>
+    <div class="siteGrid-item">Case Study</div>
+    <div class="siteGrid-item">Blog Entry</div>
+  </section>
+
+  {{{ content }}}
+
+  <!-- DocPad Scripts + Our Own -->
+  <% if (@getEnvironment() == 'development'): %>
+    <%- @getBlock('scripts').add(['/vendor/log.js']).toHTML() %>
+  <% end %>
+
+</body>
+</html>
