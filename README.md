@@ -12,6 +12,23 @@ We're hoping it will be a learning experience for us as well as others. We'll be
 
 Major changes and deliverables will be logged here.
 
+## Getting Started
+
+1. [Install DocPad](https://github.com/bevry/docpad)
+
+1. Clone the project and run the server
+
+	``` bash
+	git clone git://github.com/docpad/html5-boilerplate.docpad.git
+	cd html5-boilerplate.docpad
+	npm install
+	docpad run
+	```
+
+1. [Open http://localhost:9778/](http://localhost:9778/)
+
+1. Start hacking away by modifying the `src` directory
+
 ## License
 
 Unless stated otherwise, all content/code is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License, © meltmedia meltmedia.com
