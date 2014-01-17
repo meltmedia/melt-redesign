@@ -19,8 +19,8 @@ Major changes and deliverables will be logged here.
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/docpad/html5-boilerplate.docpad.git
-	cd html5-boilerplate.docpad
+	git clone git://github.com/meltmedia/melt-redesign.git
+	cd melt-redesign
 	npm install
 	docpad run
 	```
